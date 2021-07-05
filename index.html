@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<title>Toxic comment classifier</title>
+</head>
+<body>
+<div class="container">
+	<div class="jumbotron">
+    <h2>Toxic comment analyzer</h2> 
+    <p>Write a comment to check if its toxic or not.</p> 
+  </div>
+<form method="post" action="{{ url_for('main') }}">
+  <div class="form-group">
+    <label for="Review">Comment</label>
+    <textarea name="review" class="form-control" placeholder="Enter comment"></textarea> 
+    <small class="form-text text-muted"></small>
+  </div>
+ 
+  <button type="submit" class="btn btn-primary">Post</button>
+</form>
+</body>
+</div>
+</html>
